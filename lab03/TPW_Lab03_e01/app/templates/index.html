@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <a href="/books"><h2>Books</h2></a>
+    <a href="/authors"><h2>Authors</h2></a>
+    <a href="/publishers"><h2>Publishers</h2></a>
+    <hr>
+    <ul>
+        {% for book in all_books %}
+        <a href="/book/{{ book.id }}"><li>{{ book.title }}</li></a>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

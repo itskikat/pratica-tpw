@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h3>{{ book.title }} - Details</h3>
+    <hr>
+    <ul>
+        <li>Title: {{ book.title }}</li>
+        {% for author in book.authors.all %}
+        <li>Authors: {{ author.name }}</li>
+        {% endfor %}
+        <li>Publishing Date: {{ book.date }}</li>
+        <li>Publisher: {{ book.publisher }}</li>
+    </ul>
+
+{% endblock %}
