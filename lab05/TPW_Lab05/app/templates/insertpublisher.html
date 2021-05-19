@@ -1,0 +1,40 @@
+{%  extends "layout.html" %}
+
+{% block content %}
+
+    {% if error %}
+        <p style="...">ERROR: Insert a query term.</p>
+    {% endif %}
+
+    <h2>{{ title }}</h2>
+    <div class="row">
+        <div class="col-md-8">
+            <section id="inspublisherForm">
+                <form action="." method="post" class="form-horizontal">
+                    {% csrf_token %}
+                    <h4>Insert data for new publisher.</h4>
+                    <hr/>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <ul>Name: {{ form.name }}</ul>
+                            <ul>City: {{ form.city }}</ul>
+                            <ul>Country: {{ form.country }}</ul>
+                            <ul>Website: {{ form.website }}</ul>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <input type="submit" value="Insert" class="btn btn-primary">
+                        </div>
+                    </div>
+                </form>
+            </section>
+            {% if success %}
+                <p style="...">Success! New publisher inserted.</p>
+            {% endif %}
+        </div>
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h3>Authors</h3>
+    <hr>
+    <ul>
+        {% if not publisher_authors %}
+        <li>Sorry! There are no authors in this Publisher!</li>
+        {% endif %}
+        {% for author in publisher_authors.all %}
+        <a href="/author/{{ author.id }}"> <li>{{ author.name }} </li> </a>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

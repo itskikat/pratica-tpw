@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h3>Books</h3>
+    <hr>
+    <ul>
+        {% for book in all_books %}
+        <a href="/book/{{ book.id }}"><li>{{ book.title }}</li></a>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
