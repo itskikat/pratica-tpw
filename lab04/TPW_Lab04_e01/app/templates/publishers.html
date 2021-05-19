@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h3>Publishers</h3>
+    <hr>
+    <ul>
+        {% for publisher in all_publishers %}
+        <a href="/publisher/{{ publisher.id }}"> <li>{{ publisher.name }}</li> </a>
+        <a href="/pauthors/{{ publisher.name }}">Autores</a>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

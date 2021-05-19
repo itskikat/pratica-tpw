@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h3>{{ publisher.name }} - Details</h3>
+    <hr>
+    <ul>
+        <li>Name: {{ publisher.name }}</li>
+        <li>City: {{ publisher.city }}</li>
+        <li>Country: {{ publisher.country }}</li>
+        <li>Website: {{ publisher.website }}</li> <a href="{{ publisher.website }}">Visit!</a>
+    </ul>
+
+{% endblock %}

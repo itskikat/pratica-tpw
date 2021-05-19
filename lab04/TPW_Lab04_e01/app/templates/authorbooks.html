@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h3>Books</h3>
+    <hr>
+    <ul>
+        {% if not author_books %}
+        <li>Sorry! There are no books by this author!</li>
+        {% endif %}
+        {% for book in author_books %}
+        <a href="/book/{{ book.id }}"><li>{{ book.title }}</li></a>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
