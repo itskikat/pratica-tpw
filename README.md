@@ -12,6 +12,8 @@
 [Lab08 - Introdução ao TypeScript](https://github.com/itskikat/pratica-tpw/tree/main/lab08)
 <br>
 [Lab09 - Introdução ao Angular](https://github.com/itskikat/pratica-tpw/tree/main/lab09)
+<br>
+[Lab10 - Angular (Routing, Navegação e Múltiplas Vistas)](https://github.com/itskikat/pratica-tpw/tree/main/lab10)
 
 ----------
 ## Author
