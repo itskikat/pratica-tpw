@@ -1,0 +1,11 @@
+<div class="container" style="margin-top: 5%">
+    <h2>Authors</h2>
+    <ul class = "authors">
+        <li *ngFor = "let author of authors">
+            <a routerLink = "/authordetails/{{author.num}}">
+                <span class = "badge">{{ author.num }}</span> {{ author.name }}
+            </a>
+        </li>
+    </ul>
+</div>
+    

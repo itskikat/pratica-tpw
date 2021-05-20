@@ -1,0 +1,33 @@
+<div class = "container" style = "margin-top: 5%;">
+    <h2>Book Details</h2>
+    <div *ngIf = "book">
+        <h2 style="font-style: italic;">Information on {{ book.title | uppercase }}</h2>
+        <div>
+            <label>Num:
+                <input [(ngModel)] = "book.num" readonly>
+            </label>
+        </div>
+        <div>
+            <label>Title:
+                <input [(ngModel)] = "book.title" placeholder = "title">
+            </label>
+        </div>
+        <div>
+            <label>Date:
+                <input [(ngModel)] = "book.date" placeholder = "city">
+            </label>
+        </div>
+        <div>
+            <label>Authors:
+                <input *ngFor = "let auth of book.authors" [(ngModel)] = "auth.name" placeholder = "authors">
+            </label>
+        </div>
+        <div>
+            <label>Publisher:
+                <input *ngFor = "let pub of book.publishers" [(ngModel)] = "pub.name" placeholder = "publishers">
+            </label>
+        </div>
+        <br>
+        <button (click) = "goBack()">Go Back!</button>
+    </div>
+</div>
