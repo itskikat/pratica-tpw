@@ -1,0 +1,36 @@
+<div class = "container" style = "margin-top: 5%;">
+    <h2>Publisher Details</h2>
+    <div *ngIf = "publisher">
+        <h2 style="font-style: italic;">Information on {{ publisher.name | uppercase }}</h2>
+        <div>
+            <label>Id:
+                <input [(ngModel)] = "publisher.id" readonly>
+            </label>
+        </div>
+        <div>
+            <label>Name:
+                <input [(ngModel)] = "publisher.name" placeholder = "name">
+            </label>
+        </div>
+        <div>
+            <label>City:
+                <input [(ngModel)] = "publisher.city" placeholder = "city">
+            </label>
+        </div>
+        <div>
+            <label>Country:
+                <input [(ngModel)] = "publisher.country" placeholder = "country">
+            </label>
+        </div>
+        <div>
+            <label>Website:
+                <input [(ngModel)] = "publisher.website" placeholder = "website">
+            </label>
+        </div>
+        <br>
+        <button (click)="update()">Update!</button>
+        <button (click)="delete()">Delete!</button><br>
+        <button (click)="goBack()">Go Back!</button>
+    </div>
+    
+</div>

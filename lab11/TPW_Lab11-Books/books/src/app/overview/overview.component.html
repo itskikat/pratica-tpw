@@ -1,0 +1,41 @@
+<div class="container" style="margin-top: 5%">
+	<div style="text-align: center">
+		<h1><b>Top Authors</b></h1>
+	</div>
+	<br>
+	<div class="grid grid-pad text-center">
+		<a *ngFor="let author of authors" routerLink="/authordetails/{{author.id}}" class="col-3">
+			<button type="button" class="btn btn-primary btn-lg" style="font-size: larger"><b>{{ author.name }}</b></button>
+		</a>
+	</div>
+	<br>
+</div>
+
+<br>
+
+<div class="container" style="margin-top: 5%">
+	<div style="text-align: center">
+		<h1><b>Top Publishers</b></h1>
+	</div>
+	<br>
+	<div class="grid grid-pad text-center">
+		<a *ngFor="let publisher of publishers" routerLink="/publisherdetails/{{publisher.id}}" class="col-3">
+			<button type="button" class="btn btn-primary btn-lg" style="font-size: larger"><b>{{ publisher.name }}</b></button>
+		</a>
+	</div>
+	<br>
+</div>
+
+<br>
+
+<div class="container" style="margin-top: 5%">
+	<div style="text-align: center">
+		<h1><b>Top Books</b></h1>
+	</div>
+	<br>
+	<div class="grid grid-pad text-center">
+		<a *ngFor="let book of books" routerLink="/bookdetails/{{book.id}}" class="col-3">
+			<button type="button" class="btn btn-primary btn-lg" style="font-size: larger"><b>{{ book.title }}</b></button>
+		</a>
+	</div>
+</div>
