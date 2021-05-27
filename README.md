@@ -14,6 +14,8 @@
 [Lab09 - Introdução ao Angular](https://github.com/itskikat/pratica-tpw/tree/main/lab09)
 <br>
 [Lab10 - Angular (Routing, Navegação e Múltiplas Vistas)](https://github.com/itskikat/pratica-tpw/tree/main/lab10)
+<br>
+[Lab11 - Django (RESTful Web Services) + Angular (Services for Getting DB Data)](https://github.com/itskikat/pratica-tpw/tree/main/lab11)
 
 ----------
 ## Author
